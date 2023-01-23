@@ -1,0 +1,13 @@
+.App {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  text-align: center;
+
+  // background-image: url("./img/back.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(36, 36, 36);
+}
