@@ -15,11 +15,11 @@ function MainMenu({ user, onLogout }) {
     return (
         <Container id='NavContainer'>
             <Nav className="Navigation">
-            <Link to="/" id='DropMenu'>{translated.home}</Link>
-            <Link to="/about" id='DropMenu'>{translated.about}</Link>
+                <Link to="/" id='DropMenu'>{translated.home}</Link>
+                <Link to="/about" id='DropMenu'>{translated.about}</Link>
                 <NavDropdown className="Navigation--dropdown" title={translated.product} id='DropMenu'>
                     <Link to="/film" className="DropItem" id='LinkItem'>{translated.film}</Link>
-                    <Link to="/pipes" className="DropItem" id='LinkItem'>{translated.pipes}</Link>                  
+                    <Link to="/pipes" className="DropItem" id='LinkItem'>{translated.pipes}</Link>
                 </NavDropdown>
                 <Link to="/price" id='DropMenu'>{translated.price}</Link>
                 <Link to="/contact" id='DropMenu'>{translated.contact}</Link>

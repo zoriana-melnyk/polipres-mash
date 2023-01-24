@@ -1,13 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
 .Footer {
     background-color: #111110;
     display: flex;
     flex-direction: column;
-    .FooterButton {
+    &--conteinInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5em;
+        padding: 1rem;
+        margin-top: 2rem;
+        &--shortInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &--link {
+                color: #c4c4c4;
+                text-decoration-line: none;
+                font-family: Montserrat;
+                font-size: 20px;
+                &:hover {
+                    color: #898570;
+                }
+            }
+            &--text {
+                color: #c4c4c4;
+                text-decoration-line: none;
+                font-family: Montserrat;
+                font-size: 20px;
+                &:hover {
+                    color: #c4c4c4;
+                }
+            }
+        }
+    }
+    &--button {
         .GoToUp {
-            background-color: #7f8124;
+            background-color: #898570;
             border: 1px solid #0c0b0bab;
             box-sizing: border-box;
             border-radius: 15px;
+            &:hover {
+                background-color: #242422;
+                border: 1px solid #898570;
+            }
+        }
+    }
+    // < tablet
+    @media only screen and (max-width: 670px) {
+        &--conteinInfo {
+            flex-direction: column;
+            align-items: center;
+            gap: 2em;
+            &--shortInfo {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
 }
