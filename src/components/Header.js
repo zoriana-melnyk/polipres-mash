@@ -81,7 +81,7 @@ function Header() {
     return (
         <header className="App-header" ref={target}>
             <Navbar className="App-navbar">
-            <Container>
+                <Container>
                     <Link to="/" className='navbar-brand'>
                         <img src={logo} className="App-logo" alt="logo_img" />
                     </Link>
@@ -99,7 +99,7 @@ function Header() {
 
                                 <div className="routes">
                                     <Link id="home" className="Nav-item" to="/">{translated.home}</Link>
-                                    <Link  id="menu" className="Nav-item" to="/about">{translated.about}</Link>
+                                    <Link id="menu" className="Nav-item" to="/about">{translated.about}</Link>
                                     <ul>
                                         <li className="List-menu">
                                             <Link id='LinkItem' className="CdMenu-item" to="/film">{translated.film}</Link>
